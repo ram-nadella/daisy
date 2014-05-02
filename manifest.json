@@ -2,9 +2,12 @@
     "manifest_version": 2,
     "name": "Daisy",
     "description": "One Etsy listing, daily.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "browser_action": {
-        "default_icon": "daisy.png",
+        "default_icon": "38x38.png",
         "default_popup": "popup.html"
+    },
+    "icons": {
+        "128": "128x128.png"
     }
 }
