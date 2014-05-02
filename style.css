@@ -1,0 +1,30 @@
+html, body {
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+    line-height: 1.6em;
+    width: 570px;
+}
+
+#cart {
+    position: absolute;
+    right: 4%;
+    bottom: 4%;
+    color: white;
+}
+
+#cart:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+#price {
+    position: absolute;
+    right: 10%;
+    bottom: 3%;
+    color: white;
+    font-weight: 300;
+    display: none;
+    opactiy: 0.8;
+}
