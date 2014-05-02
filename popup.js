@@ -5,35 +5,12 @@
     var listingIDs = ['151071794', '96713551', '97038517', '184344216', '165434922', '183172134'];
 
     var listingData = {
-        '2': {
-            'listing_id': 179754881,
-            'title': 'Hanging Glass Vase / Blown Glass Wall Vase / Polka Dot Glass Flower Vase / Colorful Home Decor',
-            'url': 'https://www.etsy.com/listing/179754881/hanging-glass-vase-blown-glass-wall-vase?utm_source=daisy&utm_medium=api&utm_campaign=api',
-            'num_favorers': 1014,
-            'price': '50.00',
-            'currency_code': 'USD',
-            'images': {
-                'url_170x135': 'https://img1.etsystatic.com/023/0/6226096/il_170x135.565484709_oq9i.jpg',
-                'url_570xN': 'https://img1.etsystatic.com/023/0/6226096/il_570xN.565484709_oq9i.jpg',
-                'url_75x75': 'https://img1.etsystatic.com/023/0/6226096/il_75x75.565484709_oq9i.jpg',
-                'url_fullxfull': 'https://img1.etsystatic.com/023/0/6226096/il_fullxfull.565484709_oq9i.jpg'
-            }
-        },
-        '3': {
-            
-        },
-        '4': {
-            
-        },
-        '5': {
-            
-        },
-        '6': {
-            
-        },
-        '7': {
-            
-        }
+        "2": {"listing_id":179754881,"title":"Hanging Glass Vase / Blown Glass Wall Vase / Polka Dot Glass Flower Vase / Colorful Home Decor","price":"50.00","currency_code":"USD","url":"https://www.etsy.com/listing/179754881/hanging-glass-vase-blown-glass-wall-vase?utm_source=daisy&utm_medium=api&utm_campaign=api","num_favorers":1022,"images":["https://img1.etsystatic.com/023/0/6226096/il_570xN.565484709_oq9i.jpg","https://img1.etsystatic.com/022/0/6226096/il_570xN.565485603_3rs5.jpg","https://img0.etsystatic.com/039/0/6226096/il_570xN.565373972_f3at.jpg","https://img0.etsystatic.com/031/0/6226096/il_570xN.565374180_qum0.jpg","https://img1.etsystatic.com/027/0/6226096/il_570xN.565485053_jnpc.jpg"]},
+        "3": {"listing_id":151071794,"title":"iPad Stand","price":"38.00","currency_code":"USD","url":"https://www.etsy.com/listing/151071794/ipad-stand?utm_source=daisy&utm_medium=api&utm_campaign=api","num_favorers":1083,"images":["https://img0.etsystatic.com/015/0/8032184/il_570xN.458697932_n5jb.jpg","https://img0.etsystatic.com/013/0/8032184/il_570xN.458697784_37l3.jpg","https://img0.etsystatic.com/012/0/8032184/il_570xN.458698038_aeqp.jpg"]},
+        "4": {"listing_id":96713551,"title":"White Sapphire Cresent Moon Ring, Recycled Sterling and Lunar Eclipse Ring","price":"198.00","currency_code":"USD","url":"https://www.etsy.com/listing/96713551/white-sapphire-cresent-moon-ring?utm_source=daisy&utm_medium=api&utm_campaign=api","num_favorers":1589,"images":["https://img1.etsystatic.com/000/0/5263754/il_570xN.325599645.jpg"]},
+        "5": {"listing_id":184344216,"title":"Customized Set of Wall Planters MADE TO ORDER.  Wall Planters Unglazed for Air Plants in Chocolate and Hazelnut Clay Bodies.","price":"90.00","currency_code":"USD","url":"https://www.etsy.com/listing/184344216/customized-set-of-wall-planters-made-to?utm_source=daisy&utm_medium=api&utm_campaign=api","num_favorers":426,"images":["https://img1.etsystatic.com/027/0/7869477/il_570xN.585545125_4gne.jpg"]},
+        "6": {"listing_id":165434922,"title":"Custom color leather desk organizer - minimalist office organizer - spring colors - Mother&#39;s Day","price":"66.00","currency_code":"USD","url":"https://www.etsy.com/listing/165434922/custom-color-leather-desk-organizer?utm_source=daisy&utm_medium=api&utm_campaign=api","num_favorers":383,"images":["https://img0.etsystatic.com/025/0/5424649/il_570xN.511671400_h249.jpg","https://img0.etsystatic.com/022/0/5424649/il_570xN.513747482_dgv8.jpg","https://img1.etsystatic.com/019/0/5424649/il_570xN.513811597_dipq.jpg","https://img1.etsystatic.com/043/0/5424649/il_570xN.582171997_53a2.jpg","https://img1.etsystatic.com/040/0/5424649/il_570xN.582172231_gey7.jpg"]},
+        "7": {"listing_id":183172134,"title":"Gold Brass black white minimalist modern wall hanging sconce light lighting Bathroom, bedroom, bedside lamp hallway","price":"67.00","currency_code":"USD","url":"https://www.etsy.com/listing/183172134/gold-brass-black-white-minimalist-modern?utm_source=daisy&utm_medium=api&utm_campaign=api","num_favorers":332,"images":["https://img0.etsystatic.com/021/1/6519275/il_570xN.578327744_3f9a.jpg","https://img0.etsystatic.com/032/0/6519275/il_570xN.596357894_d5sw.jpg","https://img1.etsystatic.com/019/1/6519275/il_570xN.578447133_qgmb.jpg","https://img1.etsystatic.com/027/2/6519275/il_570xN.578447261_ddxa.jpg","https://img1.etsystatic.com/027/1/6519275/il_570xN.578445357_fc5i.jpg"]}
     };
 
     var showListing = function(data) {
@@ -41,7 +18,7 @@
         var $listing = $('#listing');
         var $price = $('#price');
 
-        $listing.find('img').attr('src', data.images['url_570xN']);
+        $listing.find('img').attr('src', data.images[0]);
         $('#price').text('$ ' + data.price);
 
         $cart.hover(
